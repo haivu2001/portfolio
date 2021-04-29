@@ -21,6 +21,12 @@ let hue = 0
 
 setInterval(() => {
     hue += 1
+
+    for (let el of document.getElementsByClassName('light-bar')) {
+        el.style.background = `linear-gradient(60deg, hsla(${hue}, 100%, 80%, 0.0), hsl(${hue + 90}, 100%, 50%), hsl(${hue + 210}, 100%, 50%))`
+    }
+
+
 }, 1000 / 60)
 
 let actualRadius = 0
@@ -45,3 +51,27 @@ function render() {
 }
 
 requestAnimationFrame(() => render())
+
+let helloText = "Hello, I am Hai"
+
+setInterval(() => {
+    let el = document.getElementById('hello-text')
+    if (helloText.length > 0) {
+        let span = document.createElement('span')
+        span.innerHTML = helloText[0]
+        el.appendChild(span)
+    }
+    helloText = helloText.slice(1)
+}, 200)
+
+setTimeout(() => {
+    helloText = "It all starts with a dream";
+    document.getElementById('hello-text').innerHTML = ''
+    document.getElementById('hello-text-desc').style.display = 'none'
+}, 7000)
+
+setTimeout(() => {
+    document.getElementById('hello-text').innerHTML = 'It all starts with <span style="color: red;margin-right: 0.3em">passion</span>'
+    document.getElementById('hello-text-desc').innerHTML = 'ALWAYS SAY NO TO GIVING UP. JUST BE READY TO STAND UP AND FIGHT FOR THE TRUE PATHWAY TO SUCCESS.'
+    document.getElementById('hello-text-desc').style.display = 'inline'
+}, 13000)

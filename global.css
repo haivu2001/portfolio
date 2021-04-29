@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    background: black;
+    background: radial-gradient(hsl(0, 0%, 0%), hsl(150, 0%, 30%) 70%, hsl(0, 0%, 35%) 80%, hsl(0, 0%, 50%) 100%);
     cursor: none;
     color: white;
 }
@@ -56,13 +56,72 @@ body {
 }
 
 #right-bar:hover, #left-bar:hover {
-    color: gray;
+    outline: 3px solid hsl(0, 10%, 70%)
+}
+
+#right-bar, #left-bar {
+    border-bottom-width: 10px;
 }
 
 .light-bar {
-    width: 2px;
+    width: 10px;
     height: 40vh;
-    background: linear-gradient(60deg, hsla(0, 100%, 80%, 0.3), hsl(180, 100%, 50%), hsl(90, 100%, 50%));
+    /*background: linear-gradient(60deg, hsla(0, 100%, 80%, 0.3), hsl(180, 100%, 50%), hsl(90, 100%, 50%));*/
     display: inline-block;
     position: absolute;
+}
+
+main {
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    left: 20%;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Verdana", sans-serif, sans-serif;
+    font-weight: 100;
+    /*border: 3px solid darkgray;*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+@keyframes anim-op {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes anim-op-delayed {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+h1 span {
+    animation-name: anim-op;
+    animation-duration: 0.5s;
+}
+
+small {
+    font-size: 14.5px;
+    font-weight: bolder;
+}
+
+h1 + small {
+    animation-name: anim-op-delayed;
+    animation-duration: 10s;
 }
