@@ -64,7 +64,7 @@ body {
 }
 
 .light-bar {
-    width: 10px;
+    width: 2px;
     height: 40vh;
     /*background: linear-gradient(60deg, hsla(0, 100%, 80%, 0.3), hsl(180, 100%, 50%), hsl(90, 100%, 50%));*/
     display: inline-block;

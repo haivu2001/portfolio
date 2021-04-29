@@ -38,7 +38,7 @@ function render() {
     let grad = context.createLinearGradient(0, 0, 100, 100)
     grad.addColorStop(0, `hsl(${hue},100%,50%)`)
     grad.addColorStop(1, `hsl(${hue + 180},100%,50%)`)
-    context.lineWidth = 2.5
+    context.lineWidth = 3.5
     context.beginPath()
     let radius = Math.min(diff, 40)
     radius = Math.max(radius, 5)
