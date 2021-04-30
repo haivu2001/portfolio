@@ -72,6 +72,14 @@ setTimeout(() => {
 
 setTimeout(() => {
     document.getElementById('hello-text').innerHTML = 'It all starts with <span style="color: red;margin-right: 0.3em">passion</span>'
-    document.getElementById('hello-text-desc').innerHTML = 'ALWAYS SAY NO TO GIVING UP. JUST BE READY TO STAND UP AND FIGHT FOR THE TRUE PATHWAY TO SUCCESS.'
-    document.getElementById('hello-text-desc').style.display = 'inline'
-}, 13000)
+}, 13200)
+
+setTimeout(() => {
+    document.getElementById('hello-text').classList.add('going-top')
+    document.getElementById('hello-text').style.transform = 'translateY(-5rem)'
+}, 14500)
+
+setTimeout(() => {
+    document.getElementById('hello-text-desc-2').innerHTML = 'ALWAYS SAY NO TO GIVING UP. JUST BE READY TO STAND UP AND FIGHT FOR THE TRUE PATHWAY TO SUCCESS.'
+    document.getElementById('hello-text-desc-2').style.display = 'inline'
+}, 11400)

@@ -111,6 +111,26 @@ main h1 {
     }
 }
 
+@keyframes going-top {
+    0% {
+        /*opacity: 50%;*/
+        transform: translateY(0%);
+    }
+    100% {
+        /*opacity: 100%;*/
+        transform: translateY(-5rem);
+    }
+}
+
+.going-top {
+    animation-name: going-top;
+    animation-duration: 2s;
+}
+
+h1, main {
+    overflow: visible;
+}
+
 h1 span {
     animation-name: anim-op;
     animation-duration: 0.5s;
@@ -124,6 +144,11 @@ small {
 h1 + small {
     animation-name: anim-op-delayed;
     animation-duration: 10s;
+}
+
+#hello-text-desc-2 {
+    animation-name: anim-op-delayed;
+    animation-duration: 15s;
 }
 
 .contact {
