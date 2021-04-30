@@ -113,11 +113,9 @@ main h1 {
 
 @keyframes going-top {
     0% {
-        /*opacity: 50%;*/
         transform: translateY(0%);
     }
     100% {
-        /*opacity: 100%;*/
         transform: translateY(-5rem);
     }
 }
@@ -173,12 +171,10 @@ h1 + small {
     width: 80%;
     writing-mode: horizontal-tb;
     top: 70%;
-    /*border: 1px solid red;*/
     background: rgba(0, 0, 0, 0.1);
 }
 
 .projects > div {
-    /*border: 2px solid green;*/
     font-size: x-small;
     display: inline-block;
 }
