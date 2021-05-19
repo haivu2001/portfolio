@@ -18,7 +18,6 @@ body {
 }
 
 #fake-cursor {
-    /*border: 1px solid red;*/
     pointer-events: none;
     width: 100px;
     height: 100px;
